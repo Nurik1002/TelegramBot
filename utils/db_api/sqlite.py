@@ -184,19 +184,19 @@ class Database:
         qaytar += f"17. Savol\nA. {test_list[16].count('A')}\nB. {test_list[16].count('B')}\nC. {test_list[16].count('C')}\nD. {test_list[16].count('D')}\nE. {test_list[16].count('E')}\n"
         qaytar += f"18. Savol\nA. {test_list[17].count('A')}\nB. {test_list[17].count('B')}\nC. {test_list[17].count('C')}\nD. {test_list[17].count('D')}\nE. {test_list[17].count('E')}\nG. {test_list[17].count('G')}\n"
         qaytar += f"19. Savol\nA. {test_list[18].count('A')}\nB. {test_list[18].count('B')}\nC. {test_list[18].count('C')}\nD. {test_list[18].count('D')}\nE. {test_list[18].count('E')}\n"
-        qaytar += f"2. Savol fikrlar:\n{test_list[19]}"
-        qaytar += f"5. Savol fikrlar:\n{test_list[20]}"
-        qaytar += f"7. Savol fikrlar:\n{test_list[21]}"
-        qaytar += f"9. Savol fikrlar:\n{test_list[22]}"
-        qaytar += f"13. Savol fikrlar:\n{test_list[23]}"
-        qaytar += f"15. Savol fikrlar:\n{test_list[24]}"
-        qaytar += f"16. Savol fikrlar:\n{test_list[25]}"
-        qaytar += f"17. Savol fikrlar:\n{test_list[26]}"
-        qaytar += f"18. Savol fikrlar:\n{test_list[27]}"
-        qaytar += f"19. Savol fikrlar:\n{test_list[28]}"
+        fikr_2 = f"2. Savol fikrlar:\n{test_list[19]}".replace("None\n", "")
+        fikr_5 = f"5. Savol fikrlar:\n{test_list[20]}".replace("None\n", "")
+        fikr_7 = f"7. Savol fikrlar:\n{test_list[21]}".replace("None\n", "")
+        fikr_9 = f"9. Savol fikrlar:\n{test_list[22]}".replace("None\n", "")
+        fikr_13 = f"13. Savol fikrlar:\n{test_list[23]}".replace("None\n", "")
+        fikr_15 = f"15. Savol fikrlar:\n{test_list[24]}".replace("None\n", "")
+        fikr_16 = f"16. Savol fikrlar:\n{test_list[25]}".replace("None\n", "")
+        fikr_17 = f"17. Savol fikrlar:\n{test_list[26]}".replace("None\n", "")
+        fikr_18 = f"18. Savol fikrlar:\n{test_list[27]}".replace("None\n", "")
+        fikt_19 = f"19. Savol fikrlar:\n{test_list[28]}".replace("None\n", "")
         qaytar = qaytar.replace("None\n", "")
 
-        return qaytar
+        return qaytar, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikt_19
 
 
 
