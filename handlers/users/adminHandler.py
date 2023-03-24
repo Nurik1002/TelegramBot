@@ -26,8 +26,119 @@ async def umumiy_stat(msg : types.Message):
         id = db.get_all_users()
         logging.info(f"{id}")
         test= db.get_test(id)
-        data = db.get_statistic(test)
-        await msg.answer(text=data)
+        test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
+       # qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
+        # test = qatnashuvchi + test
+        await msg.answer(text=test)
+        try:
+            await msg.answer(fikr_2)
+        except:
+            while True:
+                if len(fikr_2) > 4000:
+                    await msg.answer(fikr_2[:4000])
+                    fikr_2 = fikr_2[:4000]
+                else:
+                    await msg.answer(fikr_2)
+                    break
+
+        try:
+            await msg.answer(fikr_5)
+        except:
+            while True:
+                if len(fikr_5) > 4000:
+                    await msg.answer(fikr_5[:4000])
+                    fikr_5 = fikr_5[:4000]
+                else:
+                    await msg.answer(fikr_5)
+                    break
+                
+        try:
+            await msg.answer(fikr_7)
+        except:
+            while True:
+                if len(fikr_7) > 4000:
+                    await msg.answer(fikr_7[:4000])
+                    fikr_7 = fikr_2[:4000]
+                else:
+                    await msg.answer(fikr_7)
+                    break
+
+        try:
+            await msg.answer(fikr_9)
+        except:
+            while True:
+                if len(fikr_9) > 4000:
+                    await msg.answer(fikr_9[:4000])
+                    fikr_9 = fikr_9[:4000]
+                else:
+                    await msg.answer(fikr_9)
+                    break
+
+        try:
+            await msg.answer(fikr_13)
+        except:
+            while True:
+                if len(fikr_13) > 4000:
+                    await msg.answer(fikr_13[:4000])
+                    fikr_13 = fikr_13[:4000]
+                else:
+                    await msg.answer(fikr_13)
+                    break
+
+        try:
+            await msg.answer(fikr_15)
+        except:
+            while True:
+                if len(fikr_15) > 4000:
+                    await msg.answer(fikr_15[:4000])
+                    fikr_15 = fikr_15[:4000]
+                else:
+                    await msg.answer(fikr_15)
+                    break
+
+        try:
+            await msg.answer(fikr_16)
+        except:
+            while True:
+                if len(fikr_16) > 4000:
+                    await msg.answer(fikr_16[:4000])
+                    fikr_16 = fikr_16[:4000]
+                else:
+                    await msg.answer(fikr_16)
+                    break
+
+        try:
+            await msg.answer(fikr_17)
+        except:
+            while True:
+                if len(fikr_17) > 4000:
+                    await msg.answer(fikr_17[:4000])
+                    fikr_17 = fikr_17[:4000]
+                else:
+                    await msg.answer(fikr_17)
+                    break
+
+        try:
+            await msg.answer(fikr_18)
+        except:
+            while True:
+                if len(fikr_18) > 4000:
+                    await msg.answer(fikr_18[:4000])
+                    fikr_18 = fikr_18[:4000]
+                else:
+                    await msg.answer(fikr_18)
+                    break
+
+        try:
+            await msg.answer(fikr_19)
+        except:
+            while True:
+                if len(fikr_19) > 4000:
+                    await msg.answer(fikr_19[:4000])
+                    fikr_19 = fikr_19[:4000]
+                else:
+                    await msg.answer(fikr_19)
+                    break
     else:
         await msg.answer("So'rovnomada hali hechkim qatnashmadi!")
 
@@ -46,10 +157,119 @@ async def yosh_kirit(msg : types.Message, state : FSMContext):
         uid = db.select_yosh(yosh)
         test = db.get_test(uid)
         qatnashuvchi = len(test[0].split())
-        data = db.get_statistic(test)
+        test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
         qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
-        data = qatnashuvchi + data
-        await msg.answer(text=data)
+        test = qatnashuvchi + test
+        await msg.answer(text=test)
+        try:
+            await msg.answer(fikr_2)
+        except:
+            while True:
+                if len(fikr_2) > 4000:
+                    await msg.answer(fikr_2[:4000])
+                    fikr_2 = fikr_2[:4000]
+                else:
+                    await msg.answer(fikr_2)
+                    break
+
+        try:
+            await msg.answer(fikr_5)
+        except:
+            while True:
+                if len(fikr_5) > 4000:
+                    await msg.answer(fikr_5[:4000])
+                    fikr_5 = fikr_5[:4000]
+                else:
+                    await msg.answer(fikr_5)
+                    break
+                
+        try:
+            await msg.answer(fikr_7)
+        except:
+            while True:
+                if len(fikr_7) > 4000:
+                    await msg.answer(fikr_7[:4000])
+                    fikr_7 = fikr_2[:4000]
+                else:
+                    await msg.answer(fikr_7)
+                    break
+
+        try:
+            await msg.answer(fikr_9)
+        except:
+            while True:
+                if len(fikr_9) > 4000:
+                    await msg.answer(fikr_9[:4000])
+                    fikr_9 = fikr_9[:4000]
+                else:
+                    await msg.answer(fikr_9)
+                    break
+
+        try:
+            await msg.answer(fikr_13)
+        except:
+            while True:
+                if len(fikr_13) > 4000:
+                    await msg.answer(fikr_13[:4000])
+                    fikr_13 = fikr_13[:4000]
+                else:
+                    await msg.answer(fikr_13)
+                    break
+
+        try:
+            await msg.answer(fikr_15)
+        except:
+            while True:
+                if len(fikr_15) > 4000:
+                    await msg.answer(fikr_15[:4000])
+                    fikr_15 = fikr_15[:4000]
+                else:
+                    await msg.answer(fikr_15)
+                    break
+
+        try:
+            await msg.answer(fikr_16)
+        except:
+            while True:
+                if len(fikr_16) > 4000:
+                    await msg.answer(fikr_16[:4000])
+                    fikr_16 = fikr_16[:4000]
+                else:
+                    await msg.answer(fikr_16)
+                    break
+
+        try:
+            await msg.answer(fikr_17)
+        except:
+            while True:
+                if len(fikr_17) > 4000:
+                    await msg.answer(fikr_17[:4000])
+                    fikr_17 = fikr_17[:4000]
+                else:
+                    await msg.answer(fikr_17)
+                    break
+
+        try:
+            await msg.answer(fikr_18)
+        except:
+            while True:
+                if len(fikr_18) > 4000:
+                    await msg.answer(fikr_18[:4000])
+                    fikr_18 = fikr_18[:4000]
+                else:
+                    await msg.answer(fikr_18)
+                    break
+
+        try:
+            await msg.answer(fikr_19)
+        except:
+            while True:
+                if len(fikr_19) > 4000:
+                    await msg.answer(fikr_19[:4000])
+                    fikr_19 = fikr_19[:4000]
+                else:
+                    await msg.answer(fikr_19)
+                    break
         await state.finish()
     else:
         await msg.answer("Iltimos son kiriting!")
@@ -67,10 +287,119 @@ async def get_jins(call : types.CallbackQuery, state : FSMContext):
     data = db.select_jinsi(jins=data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
     await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
 
 #-------------------------------------------Doimi yashash hududi statistika-----------------------------
@@ -85,10 +414,119 @@ async def get_doimi(call : types.CallbackQuery, state : FSMContext):
     data = db.select_doimi(doimi=data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
     await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
     
 #-------------------------------------------Yashash joyi------------------------------------------------------
@@ -104,10 +542,119 @@ async def get_yashash(call : types.CallbackQuery, state : FSMContext):
     data = db.select_vaqtinchalik(data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
     await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
     
 #-----------------------------------------Ota ma'lumoti------------------------------------------------------
@@ -123,10 +670,119 @@ async def get_ota(call : types.CallbackQuery, state : FSMContext):
     data = db.select_ota(data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
     await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
     
 #---------------------------------------Ona ma'lumoti---------------------------------------------------
@@ -142,10 +798,118 @@ async def get_ota(call : types.CallbackQuery, state : FSMContext):
     data = db.select_ona(data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
-    await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
 #--------------------------------------------Ta'lim -------------------------------------------------------------
 
@@ -160,10 +924,119 @@ async def get_talim(call : types.CallbackQuery, state : FSMContext):
     data = db.select_talim(data)
     test = db.get_test(data)
     qatnashuvchi = len(test[0].split())
-    test = db.get_statistic(test)
+    test, fikr_2, fikr_5, fikr_7, fikr_9, fikr_13, fikr_15, fikr_16, fikr_17, fikr_18, fikr_19 = db.get_statistic(test)
     qatnashuvchi = str(qatnashuvchi) + " ta qatnahuvchi topildi.\n"
     test = qatnashuvchi + test
     await call.message.answer(text=test)
+    try:
+        await call.message.answer(fikr_2)
+    except:
+        while True:
+            if len(fikr_2) > 4000:
+                await call.message.answer(fikr_2[:4000])
+                fikr_2 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_2)
+                break
+
+    try:
+        await call.message.answer(fikr_5)
+    except:
+        while True:
+            if len(fikr_5) > 4000:
+                await call.message.answer(fikr_5[:4000])
+                fikr_5 = fikr_5[:4000]
+            else:
+                await call.message.answer(fikr_5)
+                break
+                
+    try:
+        await call.message.answer(fikr_7)
+    except:
+        while True:
+            if len(fikr_7) > 4000:
+                await call.message.answer(fikr_7[:4000])
+                fikr_7 = fikr_2[:4000]
+            else:
+                await call.message.answer(fikr_7)
+                break
+
+    try:
+        await call.message.answer(fikr_9)
+    except:
+        while True:
+            if len(fikr_9) > 4000:
+                await call.message.answer(fikr_9[:4000])
+                fikr_9 = fikr_9[:4000]
+            else:
+                await call.message.answer(fikr_9)
+                break
+
+    try:
+        await call.message.answer(fikr_13)
+    except:
+        while True:
+            if len(fikr_13) > 4000:
+                await call.message.answer(fikr_13[:4000])
+                fikr_13 = fikr_13[:4000]
+            else:
+                await call.message.answer(fikr_13)
+                break
+
+    try:
+        await call.message.answer(fikr_15)
+    except:
+        while True:
+            if len(fikr_15) > 4000:
+                await call.message.answer(fikr_15[:4000])
+                fikr_15 = fikr_15[:4000]
+            else:
+                await call.message.answer(fikr_15)
+                break
+
+    try:
+        await call.message.answer(fikr_16)
+    except:
+        while True:
+            if len(fikr_16) > 4000:
+                await call.message.answer(fikr_16[:4000])
+                fikr_16 = fikr_16[:4000]
+            else:
+                await call.message.answer(fikr_16)
+                break
+
+    try:
+        await call.message.answer(fikr_17)
+    except:
+        while True:
+            if len(fikr_17) > 4000:
+                await call.message.answer(fikr_17[:4000])
+                fikr_17 = fikr_17[:4000]
+            else:
+                await call.message.answer(fikr_17)
+                break
+
+    try:
+        await call.message.answer(fikr_18)
+    except:
+        while True:
+            if len(fikr_18) > 4000:
+                await call.message.answer(fikr_18[:4000])
+                fikr_18 = fikr_18[:4000]
+            else:
+                await call.message.answer(fikr_18)
+                break
+
+    try:
+        await call.message.answer(fikr_19)
+    except:
+        while True:
+            if len(fikr_19) > 4000:
+                await call.message.answer(fikr_19[:4000])
+                fikr_19 = fikr_19[:4000]
+            else:
+                await call.message.answer(fikr_19)
+                break
     await state.finish()
     
 #-------------------------------------Statistika finish- --------------------------------------------------------
